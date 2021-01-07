@@ -1,7 +1,7 @@
-import { gql } from '../deps.js';
-const typeDefs = gql`
+import { gql } from '../../deps.js';
+const typemercadoria = `
     type Mercadoria {
-        codUn: String
+        codun: String
         nomeUn: String
         vendaUn: Float
         custoUn: Float
@@ -17,20 +17,23 @@ const typeDefs = gql`
         codForn: Int
         depart: String
         acesso: Int
-    }
+    }`
 
+const typeQueryMercadoria = `
     type Query{
         mercadorias: [Mercadoria]
-        Mercadoria: Mercadoria
+        mercadoria: Mercadoria
     }
 `;
 
-const resolvers = {
-    Query: {
-
-    }
+const mercadoria = () => {
+        return { codun: "1"}
+    
 }
+
+
     export {
-        typeDefs,
-        resolvers
-    }
+        typemercadoria,
+        typeQueryMercadoria,
+        mercadoria,
+}
