@@ -1,6 +1,6 @@
-const schemaFornecedor = `{
+const Fornecedor = `
     type Fornecedor {
-        codforn: int
+        codforn: Int
         fornecedor: String
         endereco: String
         fone: String
@@ -8,12 +8,13 @@ const schemaFornecedor = `{
         estado: String
         contato: String
     } 
-}`
-
-const resFornecedor = `{
-    fornecedor: Fornecedor
-}`
+`;
 
 const fornecedor = () => {
-
+    return {codforn: 10}
 } 
+
+export{
+    Fornecedor,
+    fornecedor
+}

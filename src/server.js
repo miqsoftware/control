@@ -3,21 +3,20 @@ import { applyGraphQL, gql, GQLError } from './deps.js';
 import { PORT } from './config.js';
 const app = new Application();
 import { Query } from './graphql/Schema/query.js'
-import {
-            Mercadoria,
-            mercadoria,
-       } 
-from './graphql/Schema/mercadoria.js';
-
+import { Mercadoria, mercadoria } 
+    from './graphql/Schema/mercadoria.js';
+import { Fornecedor, fornecedor } from './graphql/Schema/fornecedor.js';
 
 const typeDefs = gql`${
     Mercadoria+ 
+    Fornecedor+
     Query
 }`
 
 const resolvers = {
     Query: {
-        mercadoria
+        mercadoria,
+        fornecedor
     }
 }
 
