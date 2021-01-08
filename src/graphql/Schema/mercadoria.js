@@ -1,5 +1,4 @@
-import { gql } from '../../deps.js';
-const typemercadoria = `
+const Mercadoria = `
     type Mercadoria {
         codun: String
         nomeUn: String
@@ -19,21 +18,11 @@ const typemercadoria = `
         acesso: Int
     }`
 
-const typeQueryMercadoria = `
-    type Query{
-        mercadorias: [Mercadoria]
-        mercadoria: Mercadoria
-    }
-`;
-
 const mercadoria = () => {
-        return { codun: "1"}
-    
+    return []
 }
 
-
-    export {
-        typemercadoria,
-        typeQueryMercadoria,
-        mercadoria,
+export {
+    Mercadoria,
+    mercadoria,
 }
