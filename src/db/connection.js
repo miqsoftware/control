@@ -1,5 +1,35 @@
-import { client } from '../deps.js'
+import { Client } from '../deps.js'
 
 import {
-
+    USER,
+    DATABASE,
+    HOST,
+    PORT, 
+    PASSWORD
 } from '../config.js'
+console.log( 
+    USER,
+    DATABASE,
+    HOST,
+    PORT, 
+    PASSWORD
+)
+
+const client = await new Client(
+    {
+        user: USER,
+        database: DATABASE,
+        hostname: HOST,
+        port: PORT,
+        password: PASSWORD   
+    }
+);
+
+await client.connect();
+
+// const result = await client.query({
+//     text: 'SELECT * FROM fornecedor'
+// })
+
+// console.log(result.rows);
+export default client;

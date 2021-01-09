@@ -1,3 +1,4 @@
+import db from '../../db/connection.js'
 const Fornecedor = `
     type Fornecedor {
         codforn: Int
@@ -10,8 +11,12 @@ const Fornecedor = `
     } 
 `;
 
-const fornecedor = () => {
-    return {codforn: 10}
+const fornecedor = async () => {
+    const result = await db.query({
+        text: "SELECT * FROM  fornecedor"
+    })
+    console.log(result.rows);
+    return result.rows;
 } 
 
 export{
