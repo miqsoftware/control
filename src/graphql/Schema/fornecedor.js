@@ -16,7 +16,8 @@ const fornecedor = async () => {
         text: "SELECT * FROM  fornecedor"
     })
     console.log(result.rows);
-    return result.rows;
+    console.log(result.rowsOfObjects());
+    return result.rowsOfObjects()[0];
 } 
 
 export{
