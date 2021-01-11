@@ -11,16 +11,15 @@ const Fornecedor = `
     } 
 `;
 
-const fornecedor = async () => {
+const fornecedor = async (_, { codforn }) => {
     const result = await db.query({
-        text: "SELECT * FROM  fornecedor"
+        text: "SELECT * FROM  fornecedor WHERE codforn = $1",
+        args: [codforn]
     })
-    console.log(result.rows);
-    console.log(result.rowsOfObjects());
     return result.rowsOfObjects()[0];
 } 
 
 export{
     Fornecedor,
-    fornecedor
+    fornecedor,
 }
