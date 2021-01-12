@@ -1,7 +1,7 @@
 const Query = `
     type Query{
-        mercadoria: Mercadoria
-        fornecedor: Fornecedor
+        mercadoria(codun: String): Mercadoria
+        fornecedor(codforn: Int): Fornecedor
     }
 `;
 
