@@ -4,18 +4,23 @@ const app = new Application();
 import { Query } from './graphql/Schema/query.js'
 import { Mercadoria, mercadoria } 
     from './graphql/Schema/mercadoria.js';
-import { Fornecedor, fornecedor } from './graphql/Schema/fornecedor.js';
+import { Fornecedor, fornecedor } 
+    from './graphql/Schema/fornecedor.js';
+import { User, user }
+    from './graphql/Schema/user.js';
 
 const typeDefs = gql`${
     Mercadoria+ 
     Fornecedor+
+    User+
     Query
 }`
 
 const resolvers = {
     Query: {
         mercadoria,
-        fornecedor
+        fornecedor,
+        user       
     }
 }
 
