@@ -11,7 +11,9 @@ const User = `
     }
 `;
 
-const user = async (_, { coduser }) => {
+
+const user = async (_, { coduser }, context) => {
+    console.log(context);
     const result = await db.query({
         text: 'SELECT * FROM "user" WHERE coduser = $1',
         args: [coduser]

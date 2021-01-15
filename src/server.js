@@ -1,4 +1,4 @@
-import { Application, Router} from "./deps.js";
+import { Application, Router, Context} from "./deps.js";
 import { applyGraphQL, gql, GQLError } from './deps.js';
 const app = new Application();
 import { Query } from './graphql/Schema/query.js'
@@ -27,7 +27,10 @@ const resolvers = {
 const GraphQLService = await applyGraphQL({
     path: '/graphql',
     typeDefs,
-    resolvers
+    resolvers,
+    context: ctx => {
+      return ctx.request.headers.get('authorization');  
+    }
 })
 
 app.use(GraphQLService.routes(),
