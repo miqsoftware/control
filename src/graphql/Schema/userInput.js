@@ -1,6 +1,6 @@
  const UserInput = `
     input UserInput{
-        codigo: Int
+        name: String
         password: String
     }
 `;
