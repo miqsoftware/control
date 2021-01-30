@@ -1,7 +1,9 @@
  const UserInput = `
     input UserInput{
-        name: String
+        pseudonimo: String
         password: String
+        name: String
+        perfil: String
     }
 `;
 

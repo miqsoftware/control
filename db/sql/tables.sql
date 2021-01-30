@@ -1,7 +1,7 @@
 create table mercadoria(
 	    codUn Varchar(13),
         nomeUn Varchar(255),
-  		vendaUn Float,
+  		  vendaUn Float,
         custoUn Float,
         estoqueUn Integer,
         codCj varchar(13),
