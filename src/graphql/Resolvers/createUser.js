@@ -5,9 +5,6 @@ export const createUser = async (_, args ) => {
     for (const [property, value] of Object.entries(args.userInput)){
         data.push(value);
     }
-    console.log(data,[...data]);
-   
-
     
     const result = await db.query({
         text: `INSERT INTO "user" (pseudonimo, senha, nome, perfil) 
@@ -15,6 +12,5 @@ export const createUser = async (_, args ) => {
         args: [...data],
     });
 
-    console.log(result.rowsOfObjects()[0]);
     return result.rowsOfObjects()[0];
 }
