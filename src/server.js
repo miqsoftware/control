@@ -1,6 +1,9 @@
 import { Application, Router, Context} from "./deps.js";
 import { applyGraphQL, gql } from './deps.js';
 const app = new Application();
+//resolvers
+import { TipoPerfil } from './deps.js'
+
 import { Query } from './graphql/Schema/query.js'
 import { Mercadoria, mercadoria } 
     from './graphql/Schema/mercadoria.js';
@@ -15,6 +18,7 @@ import { Mutation } from './graphql/Schema/mutation.js'
 import { createUser } from './graphql/Resolvers/createUser.js'
 
 const typeDefs = gql`${
+    TipoPerfil+
     Mercadoria+ 
     Fornecedor+
     User+
