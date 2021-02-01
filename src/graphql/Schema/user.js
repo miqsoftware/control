@@ -4,7 +4,7 @@ export const User = `
         pseudonimo: String
         senha: String
         nome: String
-        perfil: String
+        perfil: Perfil
         token: String
     }
 `;  
