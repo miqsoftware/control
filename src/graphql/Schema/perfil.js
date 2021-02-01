@@ -1,7 +1,6 @@
-export const TipoPerfil = `
-    enum TipoPerfil{
-        ADMIN
-        VENDEDOR
-        GERENTE
+export const Perfil = `
+    type Perfil{
+        idPerfil: Int
+        descricao: String
     }
 `;
