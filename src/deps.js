@@ -3,3 +3,4 @@ export { applyGraphQL, gql, GQLError } from "https://deno.land/x/oak_graphql/mod
 export { Client } from "https://deno.land/x/postgres/mod.ts";
 export { create, verify } from "https://deno.land/x/djwt/mod.ts"
 export { UserInput } from './graphql/Schema/userInput.js' 
+export { TipoPerfil } from './graphql/Schema/tipoPerfil.js'
