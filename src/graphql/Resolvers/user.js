@@ -37,6 +37,7 @@ const user = async (_, { input: { name, password } },  { token }) => {
         throw new GQLError({ text: 'user not found.' })
     }        
 }
+
 export {
     user
 }

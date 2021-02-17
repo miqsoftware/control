@@ -1,31 +1,36 @@
 import { Application, Router, Context} from "./deps.js";
 import { applyGraphQL, gql } from './deps.js';
 const app = new Application();
-//resolvers
+//Schema
 import { TipoPerfil } from './deps.js'
-
+import { Perfil } from './deps.js' 
 import { Query } from './graphql/Schema/query.js'
-import { Mercadoria, mercadoria } 
-    from './graphql/Schema/mercadoria.js';
+import { Mercadoria } from './graphql/Schema/mercadoria.js';
 import { Fornecedor, fornecedor } 
     from './graphql/Schema/fornecedor.js';
-import { user }
-    from './graphql/Resolvers/user.js';
 import { User }
-    from './graphql/Schema/User.js';
-import  { UserInput } from './deps.js';
+    from './graphql/Schema/user.js';
 import { Mutation } from './graphql/Schema/mutation.js'
+import  { UserInput } from './deps.js';
+
+//Resolvers
+import { user } from './graphql/Resolvers/user.js';
 import { createUser } from './graphql/Resolvers/createUser.js'
+import { createPerfil } from './graphql/Resolvers/createPerfil.js'
+import { perfil } from './graphql/Resolvers/perfil.js'
+import { mercadoria } from './graphql/Resolvers/mercadoria.js' 
 
 const typeDefs = gql`${
     TipoPerfil+
+    Perfil+
     Mercadoria+ 
     Fornecedor+
     User+
     UserInput+
     Query+
     Mutation
-}`
+}
+`;
 
 const resolvers = {
     Query: {
@@ -34,7 +39,11 @@ const resolvers = {
         user,       
     },
     Mutation: {
-        createUser
+        createUser,
+        createPerfil,
+    },
+    User:{
+        perfil,
     }
 }
 
