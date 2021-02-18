@@ -1,4 +1,4 @@
-import { Client } from '../deps.js'
+import { Client } from 'https://deno.land/x/postgres/mod.ts'
 
 import {
     USER,
@@ -15,7 +15,7 @@ console.log(
     PASSWORD
 )
 
-const client = await new Client(
+const client =  await new Client(
     {
         user: USER,
         database: DATABASE,

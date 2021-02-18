@@ -1,5 +1,5 @@
-const Mercadoria = `
-    type Mercadoria {
+const MercadoriaInput = `
+    input MercadoriaInput{
         codun: String
         nomeun: String
         vendaun: Float
@@ -15,11 +15,10 @@ const Mercadoria = `
         compra: Float
         codforn: Int
         depart: String
-        acesso: Int
-    }`
-
-
+        acesso: Int   
+    }
+`
 
 export {
-    Mercadoria
+    MercadoriaInput
 }
