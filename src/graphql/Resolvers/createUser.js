@@ -5,9 +5,10 @@ export const createUser = async (_, args ) => {
     for (const [property, value] of Object.entries(args.userInput)){
         data.push(value);
     }
+    console.log(...data)
     
     const result = await db.query({
-        text: `INSERT INTO "user" (pseudonimo, senha, nome, perfil) 
+        text: `INSERT INTO "user" (pseudonimo, senha, nome, idperfil) 
                VALUES ($1, $2, $3, $4) RETURNING *;`,
         args: [...data],
     });

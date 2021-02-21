@@ -3,18 +3,18 @@ import  { GQLError } from '../../deps.js'
 import { createToken, verifyToken } from '../../token/generator.js'
 
 
-async function fetchDataUser(name) {
+async function fetchDataUser(nome) {
     const result = await db.query({
         text: 'SELECT * FROM "user" WHERE nome = $1',
-        args: [name]
+        args: [nome]
     });    
     return result.rowsOfObjects()[0];        
 }
 
-const user = async (_, { input: { name, password } },  { token }) => {
-    const token_aux = await createToken(name); 
+const user = async (_, { input: { nome, password } },  { token }) => {
+    const token_aux = await createToken(nome); 
     console.log(token_aux);
-    const userData = await fetchDataUser(name);
+    const userData = await fetchDataUser(nome);
         try {
             if (await verifyToken(token)){
             }
@@ -23,8 +23,8 @@ const user = async (_, { input: { name, password } },  { token }) => {
         }  
 
         if (userData){
-            if (userData.senha === password && userData.nome === name){
-                const jwt = (userData.perfil === 'ADMIN') ? await createToken(name) : null;
+            if (userData.senha === password && userData.nome === nome){
+                const jwt = (userData.idperfil === 1) ? await createToken(nome) : null;
                 const objUser = {
                     ...userData,
                     token: jwt

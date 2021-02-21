@@ -2,8 +2,8 @@
     input UserInput{
         pseudonimo: String
         password: String
-        name: String
-        perfil: String
+        nome: String
+        idPerfil: Int
     }
 `;
 
