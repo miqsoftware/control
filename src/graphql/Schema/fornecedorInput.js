@@ -1,5 +1,5 @@
-const Fornecedor = `
-    type Fornecedor {
+export const FornecedorInput = `
+    type FornecedorInput {
         codforn: Int
         fornecedor: String
         endereco: String
@@ -9,7 +9,3 @@ const Fornecedor = `
         contato: String
     } 
 `;
-
-export{
-    Fornecedor
-}

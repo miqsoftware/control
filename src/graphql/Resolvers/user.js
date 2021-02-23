@@ -17,6 +17,7 @@ const user = async (_, { input: { nome, password } },  { token }) => {
     const userData = await fetchDataUser(nome);
         try {
             if (await verifyToken(token)){
+                
             }
         } catch (error) {
             throw new GQLError({message: 'Token expired or invalid'})  

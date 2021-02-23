@@ -16,8 +16,9 @@ export { UserInput } from './graphql/Schema/userInput.js'
 export { TipoPerfil } from './graphql/Schema/tipoPerfil.js'
 export { Perfil } from './graphql/Schema/perfil.js'
 export { MercadoriaInput } from './graphql/Schema/mercadoriaInput.js'
-
+export { FornecedorInput } from './graphql/Schema/fornecedorInput.js'
 //Resolvers
- export { createMercadoria } from './graphql/Resolvers/createMercadoria.js'
+export { createMercadoria } from './graphql/Resolvers/createMercadoria.js'
 export { mercadoria } from './graphql/Resolvers/mercadoria.js'
+export { fornecedor } from './graphql/Resolvers/fornecedor.js'
 
