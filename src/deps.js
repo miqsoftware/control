@@ -20,5 +20,6 @@ export { FornecedorInput } from './graphql/Schema/fornecedorInput.js'
 //Resolvers
 export { createMercadoria } from './graphql/Resolvers/createMercadoria.js'
 export { mercadoria } from './graphql/Resolvers/mercadoria.js'
+export { fornecedorCreate } from './graphql/Resolvers/fornecedorCreate.js'
 export { fornecedor } from './graphql/Resolvers/fornecedor.js'
 

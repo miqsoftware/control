@@ -3,5 +3,6 @@ export const Mutation  = `
         createUser( userInput: UserInput ) : User 
         createPerfil( descricao: String ): Perfil
         createMercadoria( mercadoriaInput: MercadoriaInput ): Mercadoria
+        fornecedorCreate( fornecedorInput: FornecedorInput ): Fornecedor
     }
 `;

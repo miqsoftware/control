@@ -1,6 +1,5 @@
 export const FornecedorInput = `
-    type FornecedorInput {
-        codforn: Int
+    input FornecedorInput {
         fornecedor: String
         endereco: String
         fone: String
