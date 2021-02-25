@@ -13,18 +13,23 @@ import { Mutation } from './graphql/Schema/mutation.js'
 import { UserInput } from './deps.js';
 import { MercadoriaInput } from './deps.js'
 import { FornecedorInput } from './deps.js';
+import { Cliente } from './deps.js'
+
 //Resolvers
 import { user } from './graphql/Resolvers/user.js';
 import { createUser } from './graphql/Resolvers/createUser.js'
 
-import { createPerfil } from './graphql/Resolvers/createPerfil.js'
 import { perfil } from './graphql/Resolvers/perfil.js'
+import { createPerfil } from './graphql/Resolvers/createPerfil.js'
 
 import { mercadoria } from './deps.js' 
 import { createMercadoria } from './deps.js'
 
 import { fornecedor } from './deps.js'
 import { fornecedorCreate } from './deps.js'
+
+import { clienteCreate } from './deps.js'
+import { ClienteInput } from "./graphql/Schema/clienteInput.js";
 
 
 const typeDefs = gql`${
@@ -36,6 +41,8 @@ const typeDefs = gql`${
     Fornecedor+    
     User+
     UserInput+
+    Cliente+
+    ClienteInput+
     Query+
     Mutation
 }
@@ -52,6 +59,7 @@ const resolvers = {
         createPerfil,
         createMercadoria,
         fornecedorCreate,
+        clienteCreate,
     },
     User:{
         perfil,

@@ -17,9 +17,15 @@ export { TipoPerfil } from './graphql/Schema/tipoPerfil.js'
 export { Perfil } from './graphql/Schema/perfil.js'
 export { MercadoriaInput } from './graphql/Schema/mercadoriaInput.js'
 export { FornecedorInput } from './graphql/Schema/fornecedorInput.js'
-//Resolvers
-export { createMercadoria } from './graphql/Resolvers/createMercadoria.js'
-export { mercadoria } from './graphql/Resolvers/mercadoria.js'
-export { fornecedorCreate } from './graphql/Resolvers/fornecedorCreate.js'
-export { fornecedor } from './graphql/Resolvers/fornecedor.js'
 
+export { Cliente } from './graphql/Schema/cliente.js'
+export { ClienteInput } from './graphql/Schema/clienteInput.js'
+
+//Resolvers
+export { mercadoria } from './graphql/Resolvers/mercadoria.js'
+export { createMercadoria } from './graphql/Resolvers/createMercadoria.js'
+
+export { fornecedor } from './graphql/Resolvers/fornecedor.js'
+export { fornecedorCreate } from './graphql/Resolvers/fornecedorCreate.js'
+
+export { clienteCreate } from './graphql/Resolvers/clienteCreate.js'
