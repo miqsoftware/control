@@ -3,17 +3,21 @@ import { applyGraphQL, gql } from './deps.js';
 const app = new Application();
 
 //Schema
-import { TipoPerfil } from './deps.js'
-import { Perfil } from './deps.js' 
-import { Query } from './graphql/Schema/query.js'
-import { Mercadoria } from './graphql/Schema/mercadoria.js';
-import { Fornecedor} from './graphql/Schema/fornecedor.js';
-import { User } from './graphql/Schema/user.js';
-import { Mutation } from './graphql/Schema/mutation.js'
-import { UserInput } from './deps.js';
-import { MercadoriaInput } from './deps.js'
-import { FornecedorInput } from './deps.js';
-import { Cliente } from './deps.js'
+import { 
+    TipoPerfil,
+    Perfil,
+    Query,
+    Mercadoria,
+    Fornecedor,
+    User,
+    Mutation,
+    UserInput,
+    MercadoriaInput,
+    FornecedorInput,
+    Cliente,
+    ContasPagar,
+    ClienteInput,
+} from './deps.js'
 
 //Resolvers
 import { user } from './graphql/Resolvers/user.js';
@@ -29,8 +33,9 @@ import { fornecedor } from './deps.js'
 import { fornecedorCreate } from './deps.js'
 
 import { clienteCreate } from './deps.js'
-import { ClienteInput } from "./graphql/Schema/clienteInput.js";
 
+
+import { contaspagar } from './deps.js'
 
 const typeDefs = gql`${
     Perfil+
@@ -43,6 +48,7 @@ const typeDefs = gql`${
     UserInput+
     Cliente+
     ClienteInput+
+    ContasPagar+
     Query+
     Mutation
 }
@@ -52,7 +58,8 @@ const resolvers = {
     Query: {
         mercadoria,
         fornecedor,
-        user,       
+        user,   
+        contaspagar,    
     },
     Mutation: {
         createUser,
