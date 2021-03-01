@@ -20,11 +20,11 @@ import {
 } from './deps.js'
 
 //Resolvers
-import { user } from './graphql/Resolvers/user.js';
-import { createUser } from './graphql/Resolvers/createUser.js'
+import { user } from './graphql/Resolvers/user/user.js';
+import { createUser } from './graphql/Resolvers/user/createUser.js'
 
-import { perfil } from './graphql/Resolvers/perfil.js'
-import { createPerfil } from './graphql/Resolvers/createPerfil.js'
+import { perfil } from './graphql/Resolvers//perfil/perfil.js'
+import { createPerfil } from './graphql/Resolvers/perfil/createPerfil.js'
 
 import { mercadoria } from './deps.js' 
 import { createMercadoria } from './deps.js'

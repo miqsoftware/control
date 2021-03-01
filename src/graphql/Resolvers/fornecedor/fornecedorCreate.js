@@ -1,4 +1,5 @@
-import db from '../../db/connection.js'
+//import db from '../../db/connection.js'
+import db from '../../../deps.js';
 
 export const fornecedorCreate = async (_, args) => {
     const data = [];

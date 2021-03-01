@@ -1,6 +1,6 @@
-import db from '../../db/connection.js'
-import  { GQLError } from '../../deps.js'
-import { createToken, verifyToken } from '../../token/generator.js'
+import db from '../../../db/connection.js'
+import  { GQLError } from '../../../deps.js'
+import { createToken, verifyToken } from '../../../token/generator.js'
 
 
 async function fetchDataUser(nome) {
