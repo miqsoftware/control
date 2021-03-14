@@ -7,7 +7,8 @@ export const ContasPagar = `
         desconto: Float 	
         datapag: String
         coduser: Int
-        
+        codboleto: String
+        parcela: Int        
     }
 `;
 

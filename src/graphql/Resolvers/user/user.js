@@ -1,4 +1,4 @@
-import db from '../../../db/connection.js'
+import { client as db } from '../../../db/connection.js'
 import  { GQLError } from '../../../deps.js'
 import { createToken, verifyToken } from '../../../token/generator.js'
 

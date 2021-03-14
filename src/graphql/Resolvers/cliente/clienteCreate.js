@@ -1,4 +1,4 @@
-import db from '../../../db/connection.js'
+import { client as db} from '../../../db/connection.js'
 
 export const clienteCreate = async (_, args) => {
     const data = []

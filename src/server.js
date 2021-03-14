@@ -17,6 +17,8 @@ import {
     Cliente,
     ContasPagar,
     ClienteInput,
+    ContasReceberInput,
+    ContasReceber
 } from './deps.js'
 
 //Resolvers
@@ -34,8 +36,8 @@ import { fornecedorCreate } from './deps.js'
 
 import { clienteCreate } from './deps.js'
 
-
 import { contaspagar } from './deps.js'
+import { contasreceberCreate } from './deps.js'
 
 const typeDefs = gql`${
     Perfil+
@@ -49,6 +51,8 @@ const typeDefs = gql`${
     Cliente+
     ClienteInput+
     ContasPagar+
+    ContasReceberInput+
+    ContasReceber+
     Query+
     Mutation
 }
@@ -67,6 +71,7 @@ const resolvers = {
         createMercadoria,
         fornecedorCreate,
         clienteCreate,
+        contasreceberCreate,
     },
     User:{
         perfil,

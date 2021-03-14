@@ -1,5 +1,5 @@
 //import db from '../../../db/connection.js'
-import db from '../../../deps.js';
+import { client as db } from '../../../deps.js';
 
  const createMercadoria = async (_, args) => {
     const data = [];  

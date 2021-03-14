@@ -1,5 +1,5 @@
 //import db from '../../db/connection.js';
-import db from '../../../deps.js';
+import { client as db } from '../../../deps.js';
 
 export const mercadoria = async (_, {codun}) => {
     const result = await db.query({

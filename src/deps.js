@@ -5,7 +5,10 @@ export { Application, Router, Context} from "https://deno.land/x/oak/mod.ts";
 export { applyGraphQL, gql, GQLError } from "https://deno.land/x/oak_graphql/mod.ts";
 
 //postgres
-export { default } from './db/connection.js'
+export { client } from './db/connection.js'
+
+// export { default as cd } from './db/connection.js'
+
 
 //djwt
 export { create, verify } from "https://deno.land/x/djwt/mod.ts"
@@ -32,9 +35,8 @@ export { Query } from './graphql/Schema/query/Query.js'
 
 export { Mutation } from './graphql/Schema/mutation/Mutation.js'
 
-
-
-
+export { ContasReceber } from './graphql/Schema/ContasReceber/ContasReceber.js'
+export { ContasReceberInput } from './graphql/Schema/ContasReceber/ContasReceberInput.js'
 
 
 //Resolvers
@@ -47,3 +49,5 @@ export { fornecedorCreate } from './graphql/Resolvers/fornecedor/fornecedorCreat
 export { clienteCreate } from './graphql/Resolvers/cliente/clienteCreate.js'
 
 export { contaspagar } from './graphql/Resolvers/contasPagar/contasPagar.js'
+
+export { contasreceberCreate } from './graphql/Resolvers/contasreceber/contasreceberCreate.js'

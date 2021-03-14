@@ -5,5 +5,6 @@ export const Mutation  = `
         createMercadoria( mercadoriaInput: MercadoriaInput ): Mercadoria
         fornecedorCreate( fornecedorInput: FornecedorInput ): Fornecedor
         clienteCreate( clienteInput: ClienteInput ): Cliente
+        contasreceberCreate( contasReceberInput: ContasReceberInput ): ContasReceber
     }
 `;
