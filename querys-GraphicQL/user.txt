@@ -1,0 +1,18 @@
+query{
+  user(input:{nome: "Eletrico Show", password
+    :"654321"}){
+    coduser    
+  	pseudonimo
+    nome
+    perfil{
+      descricao
+    }
+    token
+  } 
+  }
+
+headers
+
+{
+  "Authorization": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoiRWxldHJpY28gU2hvdyIsImV4cCI6MTYxNDU2MjIzNy4yNzF9.3qyY5uEh2r6tFfcHPR_BzaJ9PNNPciq119NAN8jhCa0NFCRb_kHFjybuFqvwO43L6bSOGxvf1BHSyhrZm--OLw"
+}

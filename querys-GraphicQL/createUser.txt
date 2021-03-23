@@ -1,0 +1,13 @@
+mutation{
+  createUser(userInput:{
+    pseudonimo: "Miqueias"
+    password: "654321"
+    nome: "Eletrico Show"
+    idPerfil: 1
+  }){
+    coduser
+    pseudonimo
+    senha
+    nome
+   }
+}

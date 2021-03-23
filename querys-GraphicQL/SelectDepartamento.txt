@@ -1,0 +1,6 @@
+query{
+    departamento(){
+	departamento
+    }		
+
+}

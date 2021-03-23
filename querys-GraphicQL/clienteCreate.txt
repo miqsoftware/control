@@ -1,0 +1,21 @@
+mutation{
+  clienteCreate(clienteInput:{
+    cliente: "Miqueias Costa2"
+    cpfcnpj: "88976904248"
+    rg: "5047489"
+    renda: 10000.59
+    datanasc: "15/03/1986"
+    obs: "Recebedor de dividendos"
+    limite: 100000.00
+    endereco: "Fernam Both Srafry"
+    bairro: "Central Park"
+    cidade: "Nova York"
+    estado: "NY"
+    fone: "985975347"
+    datacad: "24/02/2021"
+  }){
+    cliente
+    datacad
+    datanasc
+  }
+}

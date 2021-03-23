@@ -1,0 +1,22 @@
+mutation{
+  createMercadoria(mercadoriaInput:{
+    codun:"5"
+    nomeun: "HFOF11 - FUNDO IMOBILIARIO"
+		vendaun: 1.6
+    custoun: 1
+    estoqueun: 30
+    codcj: ""
+    nomecj: ""
+    Vendacj: 0
+    custocj: 0
+    estoquecj: 0
+    qtdPorcj: 0
+    st: 0
+    compra: 0
+    codforn: 1
+    depart: "frios"
+    acesso: 0
+  }){
+    codun
+  }
+}

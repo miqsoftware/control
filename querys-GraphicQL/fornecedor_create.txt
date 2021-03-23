@@ -1,0 +1,12 @@
+mutation{
+  fornecedorCreate(fornecedorInput:{
+    fornecedor: "AliExpress"
+    endereco: "China"
+    fone: "999999*9999"
+    cidade: "Hong Kong"
+    estado: "Chines"
+    contato: "Piong Lee"
+  }){
+    fornecedor
+  }
+}

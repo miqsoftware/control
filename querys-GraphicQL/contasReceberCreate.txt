@@ -1,0 +1,23 @@
+mutation{
+  contasreceberCreate(contasReceberInput:{
+    codcli: 1
+    vct:"06/03/2021" 
+    valor:115.22
+    juro: 10
+    desconto: 100
+    ultpag:"06/03/2021"
+    restante: 10
+    datacompra:"06/03/2021"
+    dataquitou:"06/03/2021"
+  }){
+    codcli
+    vct
+    valor
+    juro
+    desconto
+    ultpag
+    restante
+    datacompra
+    dataquitou
+  }
+}
