@@ -4,6 +4,7 @@ const Query = `
         fornecedor(codforn: Int): Fornecedor
         user(input: UserInput): User
         contaspagar: [ContasPagar]
+        departamento:[Departamento]
     }
 `;
 

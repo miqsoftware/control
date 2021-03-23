@@ -38,6 +38,7 @@ export { Mutation } from './graphql/Schema/mutation/Mutation.js'
 export { ContasReceber } from './graphql/Schema/ContasReceber/ContasReceber.js'
 export { ContasReceberInput } from './graphql/Schema/ContasReceber/ContasReceberInput.js'
 
+export { Departamento } from './graphql/Schema/Departamento/Departamento.js'
 
 //Resolvers
 export { mercadoria } from './graphql/Resolvers/mercadoria/mercadoria.js'
@@ -51,3 +52,6 @@ export { clienteCreate } from './graphql/Resolvers/cliente/clienteCreate.js'
 export { contaspagar } from './graphql/Resolvers/contasPagar/contasPagar.js'
 
 export { contasreceberCreate } from './graphql/Resolvers/contasreceber/contasreceberCreate.js'
+
+export { departamento } from './graphql/Resolvers/departamento/departamento.js'
+export { departamentoCreate } from './graphql/Resolvers/departamento/departamentoCreate.js'

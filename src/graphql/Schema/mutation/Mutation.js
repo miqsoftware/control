@@ -6,5 +6,6 @@ export const Mutation  = `
         fornecedorCreate( fornecedorInput: FornecedorInput ): Fornecedor
         clienteCreate( clienteInput: ClienteInput ): Cliente
         contasreceberCreate( contasReceberInput: ContasReceberInput ): ContasReceber
+        departamentoCreate( departamento: String ): Departamento
     }
 `;
