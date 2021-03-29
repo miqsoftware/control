@@ -4,7 +4,9 @@ const Query = `
         fornecedor(codforn: Int): Fornecedor
         user(input: UserInput): User
         contaspagar: [ContasPagar]
-        departamento:[Departamento]
+        departamento: [Departamento]
+        perfil: Perfil
+        entradaMercadoria(nf: String): EntradaMercadoria
     }
 `;
 

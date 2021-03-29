@@ -1,0 +1,16 @@
+mutation{
+  entradaMercadoriaCreate(entradaMercadoriaInput:{
+    codmerc: "1"
+    mercadoria: "HCTR11"
+    data: "15/03/2021"
+    qtd: 3
+    fornecedor: 1
+    vlr: 1000
+    condpag: 1
+    nf: "123456789"
+    coduser: 2
+    depart: 6
+  }){
+    mercadoria
+  }
+}

@@ -1,4 +1,5 @@
 import { client as db } from '../../../db/connection.js'
+
 export const createUser = async (_, args ) => {
     const data = [];
 

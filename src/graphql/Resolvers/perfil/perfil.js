@@ -1,7 +1,6 @@
-export const perfil = () => {
-    //implementar consulta de perfil here
-    return {
-        idPerfil: 1,
-        descricao: "ADMIN",
-    }
-} 
+import { queryField } from '../../../deps.js';
+export const perfil = async (obj, args) => {
+    console.log(obj);
+    const result = await queryField("perfil", "idperfil", obj.idperfil)     
+    return result;
+}

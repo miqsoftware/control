@@ -8,7 +8,7 @@ import { client as db } from '../../../deps.js';
     }  
     const result = await db.query({
         text: `INSERT INTO mercadoria ( codun, nomeun, vendaun, custoun, estoqueun, codcj, nomecj, Vendacj, custocj, estoquecj, qtdPorcj, st, compra, codforn, depart, acesso)
-               VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16) RETURNING *`,
+               VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING *`,
         args: [...data],
     })
     return result.rowsOfObjects()[0];

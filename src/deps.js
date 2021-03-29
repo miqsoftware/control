@@ -31,14 +31,17 @@ export { ClienteInput } from './graphql/Schema/cliente/ClienteInput.js'
 
 export { ContasPagar } from './graphql/Schema/contasPagar/ContasPagar.js'
 
-export { Query } from './graphql/Schema/query/Query.js'
-
-export { Mutation } from './graphql/Schema/mutation/Mutation.js'
-
 export { ContasReceber } from './graphql/Schema/ContasReceber/ContasReceber.js'
 export { ContasReceberInput } from './graphql/Schema/ContasReceber/ContasReceberInput.js'
 
 export { Departamento } from './graphql/Schema/Departamento/Departamento.js'
+
+export { EntradaMercadoria } from './graphql/Schema/EntradaMercadoria/EntradaMercadoria.js'
+export { EntradaMercadoriaInput } from './graphql/Schema/EntradaMercadoria/EntradaMercadoriaInput.js'
+
+export { Query } from './graphql/Schema/query/Query.js'
+
+export { Mutation } from './graphql/Schema/mutation/Mutation.js'
 
 //Resolvers
 export { mercadoria } from './graphql/Resolvers/mercadoria/mercadoria.js'
@@ -55,3 +58,9 @@ export { contasreceberCreate } from './graphql/Resolvers/contasreceber/contasrec
 
 export { departamento } from './graphql/Resolvers/departamento/departamento.js'
 export { departamentoCreate } from './graphql/Resolvers/departamento/departamentoCreate.js'
+
+
+export { entradaMercadoriaCreate } from './graphql/Resolvers/entradaMercadoria/entradaMercadoriaCreate.js'
+
+//genericsTools
+export { queryField } from './genericsTools/queryField.js';

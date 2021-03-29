@@ -7,5 +7,6 @@ export const Mutation  = `
         clienteCreate( clienteInput: ClienteInput ): Cliente
         contasreceberCreate( contasReceberInput: ContasReceberInput ): ContasReceber
         departamentoCreate( departamento: String ): Departamento
+        entradaMercadoriaCreate(entradaMercadoriaInput: EntradaMercadoriaInput): EntradaMercadoria
     }
 `;
