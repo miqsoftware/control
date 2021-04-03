@@ -1,0 +1,23 @@
+query{
+  entradaMercadoria(nf: "1" ){
+    codmerc  
+		data
+    qtd
+    fornecedor {
+      fornecedor
+    }
+    vlr
+    condpag
+    nf
+    departamento{
+      departamento
+    }
+    user{
+      nome
+  	}
+    fornecedor{
+      fornecedor
+    }
+  }
+
+}
