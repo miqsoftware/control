@@ -8,7 +8,7 @@ export const contasreceberCreate = async (_, args) => {
     }
 
     const result = await db.query({
-        text: `INSERT INTO contasreceber(codcli, vct, valor, juro, desconto, ultpag, restante, datacompra, dataquitou, operador)
+        text: `INSERT INTO contas_receber(codcli, vct, valor, juro, desconto, ultpag, restante, datacompra, dataquitou, operador)
                VALUE($1,$2,$3,$4,$5,$6,$7,$8,$9,$10) RETURNING *`, 
         args:[...data],
     })

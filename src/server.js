@@ -94,7 +94,9 @@ const resolvers = {
         perfil,
     },
     EntradaMercadoria:{
-        fornecedor
+        fornecedor,
+        user,
+        departamento,
     },
 }
 

@@ -3,7 +3,7 @@ import { client as db} from '../../../deps.js';
 
 export const fornecedorCreate = async (_, args) => {
     const data = [];
-    
+        
     for(const [property, value] of Object.entries(args.fornecedorInput)){
         data.push(value);
     } 

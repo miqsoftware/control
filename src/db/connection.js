@@ -33,5 +33,5 @@ await client.connect();
 // })
 
 // console.log(result.rows);
-const varqual = "cd test"
-export { client, varqual }
+
+export { client }
