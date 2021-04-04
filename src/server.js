@@ -22,8 +22,8 @@ import {
     Departamento,
     EntradaMercadoria,
     EntradaMercadoriaInput,
-    ItensVendidosInput,
     ItensVendidos,
+    ItensVendidosInput,
 } from './deps.js'
 
 //Resolvers
@@ -50,6 +50,7 @@ import { departamentoCreate } from './deps.js'
 import { entradaMercadoria } from "./graphql/Resolvers/entradaMercadoria/entradaMercadoria.js";
 import { entradaMercadoriaCreate } from './deps.js'
 
+import { itensVendidos } from './deps.js'
 import { itensVendidosCreate } from './deps.js'
 
 const typeDefs = gql`${
@@ -84,7 +85,8 @@ const resolvers = {
         contaspagar,
         departamento,
         perfil,
-        entradaMercadoria,    
+        entradaMercadoria,
+        itensVendidos,   
     },
     Mutation: {
         createUser,
@@ -104,6 +106,7 @@ const resolvers = {
         fornecedor,
         user,
         departamento,
+        mercadoria,
     },
     ItensVendidos:{
         mercadoria

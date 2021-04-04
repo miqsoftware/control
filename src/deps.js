@@ -64,6 +64,7 @@ export { departamentoCreate } from './graphql/Resolvers/departamento/departament
 
 export { entradaMercadoriaCreate } from './graphql/Resolvers/entradaMercadoria/entradaMercadoriaCreate.js'
 
+export { itensVendidos } from './graphql/Resolvers/itensVendidos/itensVendidos.js'
 export { itensVendidosCreate } from './graphql/Resolvers/itensVendidos/itensVendidosCreate.js'
 
 //genericsTools

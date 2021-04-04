@@ -3,9 +3,11 @@ import { client as db } from '../../../deps.js';
 import { queryField } from '../../../deps.js';
 
 export const mercadoria = async (_, {codun}) => {
-    console.log(_)
+    console.log("ITENS => ", _)
     if(_.hasOwnProperty('mercadoria')){
-        const merc = await queryField('mercadoria', 'codmerc', _.codmerc)
+        
+        const merc = await queryField('mercadoria', 'codun', _.mercadoria)
+        console.log(' => ',merc)
         if(merc){
             return merc
         }

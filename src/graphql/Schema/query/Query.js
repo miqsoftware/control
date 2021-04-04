@@ -7,6 +7,7 @@ const Query = `
         departamento: [Departamento]
         perfil: Perfil
         entradaMercadoria(nf: String): EntradaMercadoria
+        itensVendidos(codmerc: String): ItensVendidos
     }
 `;
 
