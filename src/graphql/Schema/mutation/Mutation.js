@@ -8,5 +8,6 @@ export const Mutation  = `
         contasreceberCreate( contasReceberInput: ContasReceberInput ): ContasReceber
         departamentoCreate( departamento: String ): Departamento
         entradaMercadoriaCreate(entradaMercadoriaInput: EntradaMercadoriaInput): EntradaMercadoria
+        itensVendidosCreate(itensVendidosInput: ItensVendidosInput): ItensVendidos
     }
 `;

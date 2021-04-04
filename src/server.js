@@ -22,6 +22,8 @@ import {
     Departamento,
     EntradaMercadoria,
     EntradaMercadoriaInput,
+    ItensVendidosInput,
+    ItensVendidos,
 } from './deps.js'
 
 //Resolvers
@@ -48,6 +50,8 @@ import { departamentoCreate } from './deps.js'
 import { entradaMercadoria } from "./graphql/Resolvers/entradaMercadoria/entradaMercadoria.js";
 import { entradaMercadoriaCreate } from './deps.js'
 
+import { itensVendidosCreate } from './deps.js'
+
 const typeDefs = gql`${
     Perfil+
     TipoPerfil+
@@ -65,6 +69,8 @@ const typeDefs = gql`${
     Departamento+
     EntradaMercadoriaInput+
     EntradaMercadoria+
+    ItensVendidosInput+
+    ItensVendidos+
     Query+
     Mutation
 }
@@ -89,6 +95,7 @@ const resolvers = {
         contasreceberCreate,
         departamentoCreate,
         entradaMercadoriaCreate,
+        itensVendidosCreate,
     },
     User:{
         perfil,
@@ -98,6 +105,9 @@ const resolvers = {
         user,
         departamento,
     },
+    ItensVendidos:{
+        mercadoria
+    }
 }
 
 const GraphQLService = await applyGraphQL({
