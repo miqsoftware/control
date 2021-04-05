@@ -24,6 +24,8 @@ import {
     EntradaMercadoriaInput,
     ItensVendidos,
     ItensVendidosInput,
+    Pagamento,
+    PagamentoInput,
 } from './deps.js'
 
 //Resolvers
@@ -53,6 +55,8 @@ import { entradaMercadoriaCreate } from './deps.js'
 import { itensVendidos } from './deps.js'
 import { itensVendidosCreate } from './deps.js'
 
+import { pagamentoCreate } from './deps.js'
+
 const typeDefs = gql`${
     Perfil+
     TipoPerfil+
@@ -72,6 +76,8 @@ const typeDefs = gql`${
     EntradaMercadoria+
     ItensVendidosInput+
     ItensVendidos+
+    Pagamento+
+    PagamentoInput+
     Query+
     Mutation
 }
@@ -98,6 +104,7 @@ const resolvers = {
         departamentoCreate,
         entradaMercadoriaCreate,
         itensVendidosCreate,
+        pagamentoCreate,
     },
     User:{
         perfil,

@@ -1,0 +1,15 @@
+mutation{
+  pagamentoCreate(pagamentoInput:{
+    cliente: 1
+    data: "05/04/2021"
+    vlrcompra: 39.60
+    restante: 39.60
+    juro: 0
+    desconto: 0
+    vlrpago: 0
+    user: 1
+    
+  }){
+    data
+  }
+}

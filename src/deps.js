@@ -42,6 +42,9 @@ export { EntradaMercadoriaInput } from './graphql/Schema/EntradaMercadoria/Entra
 export { ItensVendidos } from './graphql/Schema/ItensVendidos/ItensVendidos.js'
 export { ItensVendidosInput } from './graphql/Schema/ItensVendidos/ItensVendidosInput.js'
 
+export { Pagamento } from './graphql/Schema/Pagamento/Pagamento.js'
+export { PagamentoInput } from './graphql/Schema/Pagamento/PagamnetoInput.js'
+
 export { Query } from './graphql/Schema/query/Query.js'
 
 export { Mutation } from './graphql/Schema/mutation/Mutation.js'
@@ -66,6 +69,8 @@ export { entradaMercadoriaCreate } from './graphql/Resolvers/entradaMercadoria/e
 
 export { itensVendidos } from './graphql/Resolvers/itensVendidos/itensVendidos.js'
 export { itensVendidosCreate } from './graphql/Resolvers/itensVendidos/itensVendidosCreate.js'
+
+export { pagamentoCreate } from './graphql/Resolvers/pagamento/pagamentoCreate.js'
 
 //genericsTools
 export { queryField } from './genericsTools/queryField.js';

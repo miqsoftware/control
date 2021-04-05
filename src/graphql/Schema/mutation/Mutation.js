@@ -9,5 +9,6 @@ export const Mutation  = `
         departamentoCreate( departamento: String ): Departamento
         entradaMercadoriaCreate(entradaMercadoriaInput: EntradaMercadoriaInput): EntradaMercadoria
         itensVendidosCreate(itensVendidosInput: ItensVendidosInput): ItensVendidos
+        pagamentoCreate(pagamentoInput: PagamentoInput): Pagamento
     }
 `;

@@ -1,0 +1,13 @@
+mutation
+{
+  itensVendidosCreate(itensVendidosInput:{
+    data:"03/04/2021"
+    codmerc: "00"
+    qtd: 5
+    vlrunitario: 1
+    lucrounitario: 1.58
+    departamento: 1
+  }){
+    lucrounitario    
+  }
+}
