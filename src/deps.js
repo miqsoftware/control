@@ -1,6 +1,8 @@
 //server
 export { Application, Router, Context} from "https://deno.land/x/oak/mod.ts";
 
+export { oakCors } from "https://deno.land/x/cors/mod.ts";
+
 //graphql
 export { applyGraphQL, gql, GQLError } from "https://deno.land/x/oak_graphql/mod.ts";
 
@@ -45,6 +47,9 @@ export { ItensVendidosInput } from './graphql/Schema/ItensVendidos/ItensVendidos
 export { Pagamento } from './graphql/Schema/Pagamento/Pagamento.js'
 export { PagamentoInput } from './graphql/Schema/Pagamento/PagamnetoInput.js'
 
+export { Movimento } from './graphql/Schema/Movimento/Movimento.js';
+export { MovimentoInput } from './graphql/Schema/Movimento/MovimentoInput.js';
+
 export { Query } from './graphql/Schema/query/Query.js'
 
 export { Mutation } from './graphql/Schema/mutation/Mutation.js'
@@ -71,6 +76,8 @@ export { itensVendidos } from './graphql/Resolvers/itensVendidos/itensVendidos.j
 export { itensVendidosCreate } from './graphql/Resolvers/itensVendidos/itensVendidosCreate.js'
 
 export { pagamentoCreate } from './graphql/Resolvers/pagamento/pagamentoCreate.js'
+
+
 
 //genericsTools
 export { queryField } from './genericsTools/queryField.js';

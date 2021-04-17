@@ -1,7 +1,14 @@
-import { Application, Router, Context} from "./deps.js";
+import { Application,
+         Router, 
+         Context,
+         oakCors} from "./deps.js";
 import { applyGraphQL, gql } from './deps.js';
 const app = new Application();
+app.use(
+    oakCors({
 
+    })
+);
 //Schema
 import { 
     TipoPerfil,
@@ -26,6 +33,8 @@ import {
     ItensVendidosInput,
     Pagamento,
     PagamentoInput,
+    Movimento,
+    MovimentoInput,
 } from './deps.js'
 
 //Resolvers
@@ -78,6 +87,8 @@ const typeDefs = gql`${
     ItensVendidos+
     Pagamento+
     PagamentoInput+
+    Movimento+
+    MovimentoInput+
     Query+
     Mutation
 }
@@ -125,7 +136,7 @@ const GraphQLService = await applyGraphQL({
     typeDefs,
     resolvers,
     context: ctx => { 
-        const token = ctx.request.headers.get('authorization');        
+        const token = ctx.request.headers.get('authorization');       
         return {
             token
         };

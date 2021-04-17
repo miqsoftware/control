@@ -11,25 +11,25 @@ import { queryField } from '../../../deps.js'
 //     return result.rowsOfObjects()[0];
 // }
 //{ input: { nome, password }
-const user = async (_, args, { token }) => {
-
-    console.log('user -> ',_)
+const user = async (_, {input:{nome, password}}, { token }) => {
+    console.log(nome, password);
+    
     if(_.hasOwnProperty('user')){
         console.log('Entrou no hasOnwProperty')
         return await queryField('user', 'coduser', _.user)
     }
-
+// 
     const token_aux = await createToken(nome); 
     console.log(token_aux);
-    
+    // 
     const userData = await queryField('user','nome', nome);
     console.log(userData);
     try {
         if (await verifyToken(token)){
-            
+         console.log('token-ok ')   
         }
     } catch (error) {
-        throw new GQLError({message: 'Token expired or invalid'})  
+        throw new Error({message: 'Token expired or invalid'})  
     }  
 
     if (userData){
